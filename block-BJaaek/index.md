@@ -1,10 +1,24 @@
-#### Random Color Generator
+let boxfirst =  document.querySelector(".box1")
+let boxsec =  document.querySelector(".box2")
 
-1. Create two boxes with buttons in center
-2. First button with `click` and second with `move your mouse` label
-3. When clicked in the first box the background of the box should change to any random color
-4. When moving the mouse in box 2 will change the background of the the box to random color
 
-#### Final Output
+const colors = ['red','brown','yellow','green','purple','orange'];
 
-![Random Background Generator](./assets/random-background.gif)
+
+addEventListener("click", function(){
+    let result= boxfirst.style.background  = "blue"
+    return result;
+   
+})
+
+
+
+
+
+addEventListener("mouseover",function(){
+
+    let result= boxsec.style.background  = "red";
+return result;
+})
+
+
