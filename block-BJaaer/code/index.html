@@ -7,91 +7,49 @@
     <title>Handeling Forms 👇</title>
   </head>
   <body>
-    <div>
-      <form class="container">
-        <div class="form-control">
-          <label for="name">Your Name:</label>
-          <input
-            id="name"
-            type="text"
-            name="text"
-            placeholder="Enter your name"
-          />
-        </div>
-        <div class="form-control">
-          <label for="email">Your Email:</label>
-          <input
-            id="email"
-            type="text"
-            name="email"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="form-control">
-          <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
-            <option value="movies">Movies</option>
-            <option value="series">Series</option>
-            <option value="others">Others</option>
-          </select>
-        </div>
+        <form class="container">
+      <label for="name">Your Name</label>
+<input 
+id="text"
+type="text"
+name="name"
+placeholder="Enter your Name"
+/>
+<label for="email">Your Email</label>
+<input
+id="text"
+type="text"
+name="email"
+placeholder="Enter your email"
+/>
+<label for="activity">What do you love?</label>
+  <div><select id="activity" name="activity"></div>
+    <option value="movies">Movies</option>
+    <option value="games">Games</option>
+  </select>
+  <label for="color">Choose a color</label>
+  <div><input
+  type="color"
+  id="color"
+  name="color"
+  /></div>
 
-        <div class="form-control">
-          <label for="color">Choose a color</label>
-          <input
-            id="color"
-            type="color"
-            name="email"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="form-control">
-          <label for="range"> Rate the movie Inception out of 10 </label>
-          <input
-            id="range"
-            type="range"
-            max="10"
-            step="1"
-            name="email"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="form-control">
-          <label>Book genre you love?</label>
+  <label for="rating">Rate the movie Inception out of 10</label>
+  <div><input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5"></div>
 
-          <div>
-            <input
-              type="radio"
-              id="fiction"
-              name="drone"
-              value="fiction"
-              checked
-            />
-            <label for="fiction">Fiction</label>
-          </div>
+<input
+id="terms"
+type="checkbox"
+name="terms"
+/>
+<label for="terms"> I Agree to Term</label>
+<div>
+<button type="submit">submit</button></div>
 
-          <div>
-            <input
-              type="radio"
-              id="non-fiction"
-              name="drone"
-              value="non-fiction"
-            />
-            <label for="non-fiction">Non Fiction</label>
-          </div>
 
-          <div>
-            <input type="radio" id="adventure" name="drone" value="adventure" />
-            <label for="adventure">Adventure</label>
-          </div>
-        </div>
-        <div class="form-control terms">
-          <input type="checkbox" id="terms" name="terms" />
-          <label for="terms">I Agree to Terms</label>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    </form>
+  
+ 
     <script src="./script.js"></script>
   </body>
 </html>
