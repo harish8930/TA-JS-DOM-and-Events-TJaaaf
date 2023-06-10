@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Handeling Forms 👇</title>
+  </head>
+  <body>
+        <form class="container">
+      <label for="name">Your Name</label>
+<input 
+id="text"
+type="text"
+name="name"
+placeholder="Enter your Name"
+/>
+<label for="email">Your Email</label>
+<input
+id="text"
+type="text"
+name="email"
+placeholder="Enter your email"
+/>
+<label for="activity">What do you love?</label>
+  <div><select id="activity" name="activity"></div>
+    <option value="movies">Movies</option>
+    <option value="games">Games</option>
+  </select>
+  <label for="color">Choose a color</label>
+  <div><input
+  type="color"
+  id="color"
+  name="color"
+  /></div>
+
+  <label for="rating">Rate the movie Inception out of 10</label>
+  <div><input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5"></div>
+
+<input
+id="terms"
+type="checkbox"
+name="terms"
+/>
+<label for="terms"> I Agree to Term</label>
+<div>
+<button type="submit">submit</button></div>
+
+
+    </form>
+  
+ 
+    <script src="./script.js"></script>
+  </body>
+</html>
